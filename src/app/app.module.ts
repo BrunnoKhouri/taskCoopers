@@ -14,6 +14,13 @@ import { CardComponent } from './layout/card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
+import { CarouselComponent } from './layout/carousel/carousel.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { GuestCardComponent } from './layout/guest-card/guest-card.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +28,10 @@ import { MatSliderModule } from '@angular/material/slider';
     HeaderComponent,
     HomeComponent,
     BannerComponent,
-    CardComponent
+    CardComponent,
+    CarouselComponent,
+    GuestCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +41,12 @@ import { MatSliderModule } from '@angular/material/slider';
     MatButtonModule,    
     MatSliderModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatChipsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
