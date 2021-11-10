@@ -11,28 +11,28 @@
             </mat-card-title>
             <mat-card-subtitle>Start</mat-card-subtitle>
             <div class="example-container">
-                <form action="/action_page.php">
-                    <label for="fname">Your Name</label><br>
-                    <input type="text" id="fname" name="fname" value="type your name here...">
+                <form name="contatoTaskCoopers" method="POST" data-netlify="true">
+                    <label for="name">Your Name</label><br>
+                    <input type="name" id="name" name="name" onfocus="this.value=''" value="type your name here...">
                     <!-- <div class="content-label">                        
                     </div> -->
                     <div class="content-input">
                         <div style="width: 50%;">
-                            <label class="email" for="lname">Email* </label>
-                            <input class="inputDiv" type="text" id="lname" name="lname" value="example@example.com">
+                            <label class="email" for="email">Email* </label>
+                            <input class="inputDiv" type="email" id="email" name="email" onfocus="this.value=''" value="example@example.com" required>
                         </div>
                         <div style="width: 45%;">
-                            <label for="lname">Telephone* </label>
-                            <input type="any" id="lname" name="lname" value="( ) ____-____">
+                            <label for="tel">Telephone* </label>
+                            <input type="tel" id="tel" name="tel" onfocus="this.value=''" value="( )____-____" required>
                         </div>
                     </div>
-                    <label for="fname">Message*</label><br>
-                    <input class="inputMessage" type="text" name="lname" value="Type what you want to say to us"> <br>
+                    <p><label>Message: <textarea class="inputMessage" name="message"></textarea></label></p>
+                    
 
                 </form>
             </div>
             <mat-card-actions class="content-button">
-                <button class="button" mat-raised-button>Send now</button>
+                <button class="button" type="submit" mat-raised-button>Send now</button>
             </mat-card-actions>
         </div>
     </mat-card>
